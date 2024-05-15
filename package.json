@@ -3,7 +3,7 @@
   "displayName": "CSS Storage",
   "description": "Save and retrieve stored CSS selectors",
   "icon": "img/icon.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "Breathink",
   "engines": {
     "vscode": "^1.89.0"
@@ -40,14 +40,14 @@
       },
       {
         "command": "css-storage.retrieve-css-selector",
-        "key": "ctrl+alt+g",
-        "mac": "cmd+alt+g",
+        "key": "ctrl+alt+e",
+        "mac": "cmd+alt+e",
         "when": "editorTextFocus"
       },
       {
         "command": "css-storage.delete-css-selector",
-        "key": "ctrl+alt+r",
-        "mac": "cmd+alt+r",
+        "key": "ctrl+alt+d",
+        "mac": "cmd+alt+d",
         "when": "editorTextFocus"
       }
     ]
