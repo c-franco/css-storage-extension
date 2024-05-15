@@ -6,15 +6,15 @@ CSS Storage is a Visual Studio Code extension that allows developers to save and
 
 - Select a CSS selector to save it. If the selector name already exists, you can update it with the new definition.
 
-![](https://github.com/c-franco/css-storage-extension/blob/main/assets/save.gif)
+![save](https://github.com/c-franco/css-storage-extension/raw/main/assets/save.gif)
 
 - Retrieve a CSS selector and insert it into your file.
 
-![](https://github.com/c-franco/css-storage-extension/blob/main/assets/retrieve.gif)
+![retrieve](https://github.com/c-franco/css-storage-extension/raw/main/assets/retrieve.gif)
 
 - Delete CSS selectors from your saved list.
 
-![](https://github.com/c-franco/css-storage-extension/blob/main/assets/delete.gif)
+![delete](https://github.com/c-franco/css-storage-extension/raw/main/assets/delete.gif)
 
 ## Keyboard Shortcuts
 

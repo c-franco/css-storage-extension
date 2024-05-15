@@ -9,6 +9,7 @@
     "type": "git",
     "url": "https://github.com/c-franco/css-storage-extension"
   },
+  "homepage": "https://github.com/c-franco/css-storage-extension/blob/main/README.md",
   "engines": {
     "vscode": "^1.89.0"
   },
