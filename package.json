@@ -1,0 +1,74 @@
+{
+  "name": "css-storage",
+  "displayName": "CSS Storage",
+  "description": "",
+  "version": "1.0.0",
+  "publisher": "Breathink",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "css-storage.save-css-selector",
+        "title": "Save CSS selector",
+        "category": "CSS Storage"
+      },
+      {
+        "command": "css-storage.retrieve-css-selector",
+        "title": "Retrieve CSS selector",
+        "category": "CSS Storage"
+      },
+      {
+        "command": "css-storage.delete-css-selector",
+        "title": "Delete CSS selector",
+        "category": "CSS Storage"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "css-storage.save-css-selector",
+        "key": "ctrl+alt+s",
+        "mac": "cmd+alt+s",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "css-storage.retrieve-css-selector",
+        "key": "ctrl+alt+g",
+        "mac": "cmd+alt+g",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "css-storage.delete-css-selector",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^18.19.33",
+    "@types/vscode": "^1.89.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "license": "license.txt"
+}
