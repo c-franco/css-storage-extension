@@ -1,7 +1,8 @@
 {
   "name": "css-storage",
   "displayName": "CSS Storage",
-  "description": "",
+  "description": "Save and retrieve stored CSS selectors",
+  "icon": "img/icon.png",
   "version": "1.0.0",
   "publisher": "Breathink",
   "engines": {
