@@ -2,9 +2,13 @@
   "name": "css-storage",
   "displayName": "CSS Storage",
   "description": "Save and retrieve stored CSS selectors",
-  "icon": "img/icon.png",
-  "version": "1.0.1",
+  "icon": "assets/icon.png",
+  "version": "1.0.2",
   "publisher": "Breathink",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c-franco/css-storage-extension"
+  },
   "engines": {
     "vscode": "^1.89.0"
   },
