@@ -5,26 +5,25 @@ interface CSSSelectors {
 }
 
 export function activate(context: vscode.ExtensionContext) {
-
   let saveSelector = vscode.commands.registerCommand(
     "css-storage.save-css-selector",
     async () => {
       const editor = vscode.window.activeTextEditor;
       if (!editor) {
-        vscode.window.showErrorMessage("There is no file open in the editor.");
+        vscode.window.showErrorMessage("No file is open in the editor.");
         return;
       }
 
       const selectedText = editor.document.getText(editor.selection);
       if (!selectedText.trim()) {
-        vscode.window.showErrorMessage("No text has been selected to save.");
+        vscode.window.showErrorMessage("No text selected to save.");
         return;
       }
 
       const selectorNameMatch = selectedText.match(/([^\s\{\}]+)\s*\{/);
       if (!selectorNameMatch) {
         vscode.window.showErrorMessage(
-          "The CSS selector name could not be extracted from the selected text."
+          "Unable to extract CSS selector name from selected text."
         );
         return;
       }
@@ -39,7 +38,7 @@ export function activate(context: vscode.ExtensionContext) {
       await context.globalState.update("css-selectors", storedSelectors);
 
       vscode.window.showInformationMessage(
-        `CSS selector "${selectorName}" successfully saved.`
+        `CSS selector "${selectorName}" saved successfully.`
       );
     }
   );
@@ -53,6 +52,11 @@ export function activate(context: vscode.ExtensionContext) {
       );
 
       const selectorKeys = Object.keys(storedSelectors);
+      if (selectorKeys.length === 0) {
+        vscode.window.showInformationMessage("No CSS selectors saved yet.");
+        return;
+      }
+
       const selectedKey = await vscode.window.showQuickPick(selectorKeys, {
         placeHolder: "Select a CSS selector to retrieve",
       });
@@ -68,11 +72,11 @@ export function activate(context: vscode.ExtensionContext) {
           editBuilder.replace(editor.selection, selectedText);
         });
         vscode.window.showInformationMessage(
-          `CSS selector "${selectedKey}" successfully retrieved and applied.`
+          `CSS selector "${selectedKey}" retrieved and applied successfully.`
         );
       } else {
         vscode.window.showErrorMessage(
-          "There is no file open in the editor to apply the CSS selector."
+          "No file is open in the editor to apply the CSS selector."
         );
       }
     }
@@ -87,6 +91,10 @@ export function activate(context: vscode.ExtensionContext) {
       );
 
       const selectorKeys = Object.keys(storedSelectors);
+      if (selectorKeys.length === 0) {
+        vscode.window.showInformationMessage("No CSS selectors saved yet.");
+        return;
+      }
 
       const selectedKey = await vscode.window.showQuickPick(selectorKeys, {
         placeHolder: "Select a CSS selector to delete",
@@ -101,7 +109,7 @@ export function activate(context: vscode.ExtensionContext) {
       await context.globalState.update("css-selectors", storedSelectors);
 
       vscode.window.showInformationMessage(
-        `CSS selector "${selectedKey}" successfully deleted.`
+        `CSS selector "${selectedKey}" deleted successfully.`
       );
     }
   );

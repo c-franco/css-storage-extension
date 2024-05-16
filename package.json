@@ -1,9 +1,9 @@
 {
   "name": "css-storage",
   "displayName": "CSS Storage",
-  "description": "Save and retrieve stored CSS selectors",
+  "description": "Store and retrieve CSS selectors",
   "icon": "assets/icon.png",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "Breathink",
   "repository": {
     "type": "git",

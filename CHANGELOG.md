@@ -2,17 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.3]
+## [1.0.4]
 
-- Bug fix
-
-## [1.0.2]
-
-- README added
-
-## [1.0.1]
-
-- Icon change
+- Code improvement
 
 ## [1.0.0]
 

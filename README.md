@@ -22,6 +22,14 @@ CSS Storage is a Visual Studio Code extension that allows developers to save and
 - Retrieve CSS selector: `Ctrl+Alt+E` (Windows/Linux) or `Cmd+Alt+E` (macOS).
 - Delete CSS selector: `Ctrl+Alt+D` (Windows/Linux) or `Cmd+Alt+D` (macOS).
 
+## Installation
+
+Search `CSS Storage` on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Breathink.css-storage).
+
+## Feedback
+
+Issues and pull requests are welcome!
+
 ## License
 
 This extension is licensed under the [MIT License](LICENSE).
