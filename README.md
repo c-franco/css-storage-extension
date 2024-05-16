@@ -1,6 +1,8 @@
 # CSS Storage
 
-CSS Storage is a Visual Studio Code extension that allows developers to save and manage `css` selectors directly within their code editor. With this extension, you can easily store `css` selectors for quick access and reuse in your projects.
+A Visual Studio Code extension that allows you to save `css` selectors for reuse in any project. 
+
+Useful for storing media queries, animations, reusable components or whatever you need.
 
 ## Features
 
