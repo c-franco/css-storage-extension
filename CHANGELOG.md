@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.6]
+
+- Code refactor
+
 ## [1.0.5]
 
 - Changed the minimum required vscode version to 1.60.0

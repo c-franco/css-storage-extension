@@ -3,7 +3,7 @@
   "displayName": "CSS Storage",
   "description": "Store and retrieve CSS selectors",
   "icon": "assets/icon.png",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "publisher": "Breathink",
   "repository": {
     "type": "git",
