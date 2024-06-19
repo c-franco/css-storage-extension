@@ -2,14 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.7]
+
+- Change extension tags and category
+
 ## [1.0.6]
 
 - Code refactor
 
 ## [1.0.5]
 
-- Changed the minimum required vscode version to 1.60.0
-- Improved README.md
+- Change the minimum required vscode version to 1.60.0
+- Improve README.md
 
 ## [1.0.4]
 

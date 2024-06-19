@@ -3,7 +3,7 @@
   "displayName": "CSS Storage",
   "description": "Store and retrieve CSS selectors",
   "icon": "assets/icon.png",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "publisher": "Breathink",
   "repository": {
     "type": "git",
@@ -14,7 +14,17 @@
     "vscode": "^1.60.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "css",
+    "storage",
+    "completion",
+    "snippets",
+    "style",
+    "stylesheet",
+    "productivity"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
